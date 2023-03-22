@@ -22,7 +22,7 @@ doctype 声明是不区分大小写的。
 
 ## HTML基础
 - HTML 标题
-HTML 标题（Heading）是通过&<h1> - &<h6> 标签来定义的。
+HTML 标题（Heading）是通过`<h1> - `<h6>` 标签来定义的。
 - HTML 段落
 HTML 段落是通过标签 <p> 来定义的。
 - HTML 链接

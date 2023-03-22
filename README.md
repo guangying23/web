@@ -212,3 +212,22 @@ CSS 可以通过以下方式添加到HTML中:
 - 内联样式- 在HTML元素中使用"style" 属性
 - 内部样式表 -在HTML文档头部 <head> 区域使用<style> 元素 来包含CSS
 - 外部引用 - 使用外部 CSS 文件
+内联样式
+`<p style="color:blue;margin-left:20px;">这是一个段落。</p>`
+HTML样式实例 - 背景颜色
+```
+<body style="background-color:yellow;">
+<h2 style="background-color:red;">这是一个标题</h2>
+<p style="background-color:green;">这是一个段落。</p>
+</body>
+```
+HTML 样式实例 - 字体, 字体颜色 ，字体大小
+```
+<h1 style="font-family:verdana;">一个标题</h1>
+<p style="font-family:arial;color:red;font-size:20px;">一个段落。</p>
+```
+HTML 样式实例 - 文本对齐方式
+```
+<h1 style="text-align:center;">居中对齐的标题</h1>
+<p>这是一个段落。</p>
+```

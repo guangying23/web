@@ -200,7 +200,7 @@ p{text-indent:2em;}
 | %       | 定义基于父元素宽度的百分比的缩进。          |
 | inherit | 规定应该从父元素继承 text-indent 属性的值。 |
 
-#### 1.4.5 行高text-height  
+#### 1.4.5 行高line-height  
 ```
 p.small {line-height:90%}
 p.big {line-height:200%}

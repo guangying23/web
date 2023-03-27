@@ -486,6 +486,51 @@ padding:10px;<br>
   - 浮动的元素会在一行内显示并且元素顶部对齐，盒子装不下时另起一行。
   - 浮动的元素会具有行内块元素的特性。
   - 浮动元素具有行内块元素特性，包括行内元素
+  - 浮动元素经常和标准流的父亲搭配使用
+  2. 清除浮动
+  父盒子不方便给高度时；<br>
+  清除浮动就是清除浮动元素造成的影响；<br>
+  ```
+  选择器{clear:属性值}
+  ```
+| 值      | 描述                                  |
+|---------|---------------------------------------|
+| left    | 在左侧不允许浮动元素。                |
+| right   | 在右侧不允许浮动元素。                |
+| both    | 在左右两侧均不允许浮动元素。          |
+| none    | 默认值。允许浮动元素出现在两侧。      |
+| inherit | 规定应该从父元素继承 clear 属性的值。 |
+  
+  - 清除浮动方法
+  (1) 额外标签法<br>
+  在浮动元素末尾加一个空标签,空标签必须是块元素或<br><br>
+  (2)父级添加overflow属性，值为hidden或auto,无法显示溢出的部分<br>
+  (3)父级添加after伪元素<br>
+  ```
+  .clearfix::after{
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.clearfix {     /*IE6、7专有*/
+    *zoom: 1;
+}
+  ```
+  (4)父级添加双伪元素<br>
+  ```
+  .clearfix::before,.clearfix:after {
+    content: "";
+    display: table;
+}
+.clearfix::after {
+    clear: both;
+}
+.clearfix {     /*IE6、7专有*/
+    *zoom: 1;
+}
+```
   
   
   
